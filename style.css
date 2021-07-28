@@ -1,0 +1,91 @@
+hmtl{
+    box-sizing: border-box;
+    font-size:100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 2rem;
+    padding:0.3rem;
+
+    /* Fallback: Set a background color. */
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  background-size: 100%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+} 
+
+.wrapper {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+  
+    max-width:1240px; /* 2 */
+  
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+  }
+
+#map {
+    height: 600px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+.gm-style-iw-d{
+    color:black;
+}
+img{
+    width:100%;
+    height:auto;
+
+}
+.supermario_logo{
+    margin: auto;
+    width:450px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content:center;
+}
+
+@media screen and (max-width:768px){
+    h1{
+    font-size: 1.5rem;
+    }
+    .supermario_logo{
+        margin: auto;
+        width:350px;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:530px){
+    h1{
+    font-size: 1.2rem;
+    }
+    .supermario_logo{
+        margin: auto;
+        width:250px;
+        height:auto;
+    }
+}
+
+ 
